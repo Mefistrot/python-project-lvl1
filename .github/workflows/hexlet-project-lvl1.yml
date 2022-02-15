@@ -1,0 +1,12 @@
+name: hexlet-project-lvl1
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run linter
+        run: |
+          make lint
