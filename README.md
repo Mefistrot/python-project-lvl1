@@ -4,3 +4,4 @@
 [![Actions Status](https://github.com/Mefistrot/python-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/Mefistrot/python-project-lvl1/actions)
 
 brain-even: https://asciinema.org/a/sdgsvM5sftFTpDZEjFKBwvUy7
+brain-calc: https://asciinema.org/a/uDPg8zC0tgeEe8038NnAkpkXC
