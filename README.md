@@ -6,15 +6,12 @@
 This is my first training project on Hexlet.  
 To download files from the repository and install package use the following commands in command line:  
 git clone git@github.com:Mefistrot/python-project-lvl1.git - download files from the repository;  
-cd python-project-lvl1 - change to directory with downloaded files from home directory;  
-make install - creating a virtual environment and installing dependencies;  
-make build - package assembly;  
-make package-install - installing a package;  
 brain-games - running an introductory program to check the functionality after installation.  
-Asciinema  
+[![asciicast](https://asciinema.org/a/eiTAozOnhIta9Ww1qsQVISzft.svg)](https://asciinema.org/a/eiTAozOnhIta9Ww1qsQVISzft)
+
 To launch the games, use one of the following commands:  
-brain-even: [![asciicast](https://asciinema.org/a/1r9I64aRq6RXpLDO23Q5bG051.svg)](https://asciinema.org/a/1r9I64aRq6RXpLDO23Q5bG051)
-brain-calc: [![asciicast](https://asciinema.org/a/uDPg8zC0tgeEe8038NnAkpkXC.svg)](https://asciinema.org/a/uDPg8zC0tgeEe8038NnAkpkXC)  
-brain-gcd: [![asciicast](https://asciinema.org/a/PUM6rdzeHaOHH9Tj45gHL9DNh.svg)](https://asciinema.org/a/PUM6rdzeHaOHH9Tj45gHL9DNh)  
-brain-progression: [![asciicast](https://asciinema.org/a/maixAHZWYXCyaWN8c3NPmWVa3.svg)](https://asciinema.org/a/maixAHZWYXCyaWN8c3NPmWVa3)  
-brain-prime: [![asciicast](https://asciinema.org/a/GntkXBgYYNXii2I0Wa8opKEfY.svg)](https://asciinema.org/a/GntkXBgYYNXii2I0Wa8opKEfY)
+### brain-even: [![asciicast](https://asciinema.org/a/1r9I64aRq6RXpLDO23Q5bG051.svg)](https://asciinema.org/a/1r9I64aRq6RXpLDO23Q5bG051)
+### brain-calc: [![asciicast](https://asciinema.org/a/uDPg8zC0tgeEe8038NnAkpkXC.svg)](https://asciinema.org/a/uDPg8zC0tgeEe8038NnAkpkXC)  
+### brain-gcd: [![asciicast](https://asciinema.org/a/PUM6rdzeHaOHH9Tj45gHL9DNh.svg)](https://asciinema.org/a/PUM6rdzeHaOHH9Tj45gHL9DNh)  
+### brain-progression: [![asciicast](https://asciinema.org/a/maixAHZWYXCyaWN8c3NPmWVa3.svg)](https://asciinema.org/a/maixAHZWYXCyaWN8c3NPmWVa3)  
+### brain-prime: [![asciicast](https://asciinema.org/a/GntkXBgYYNXii2I0Wa8opKEfY.svg)](https://asciinema.org/a/GntkXBgYYNXii2I0Wa8opKEfY)
