@@ -9,7 +9,8 @@ packages = [
 classifiers = [
   "Programming Language :: Python :: 3.8"
 ]
-repository = ["https://github.com/Mefistrot/python-project-lvl1.git"]
+readme = "README.md"
+repository = "https://github.com/Mefistrot/python-project-lvl1.git"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
