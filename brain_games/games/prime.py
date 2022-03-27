@@ -1,17 +1,18 @@
 from random import randint
 
 
-game_description = '''Answer "yes" if given number is prime. \
+DESCRIPTION = '''Answer "yes" if given number is prime. \
 Otherwise answer "no".'''
-game_data = {}
-n = 3
-for i in range(n):
-    number = randint(1, 100)
+
+
+def get_question_and_answer():
+    question = randint(1, 100)
     divisors = set()
-    for j in range(2, number):
-        if number % j == 0:
-            divisors.add(j)
+    for i in range(2, question):
+        if question % i == 0:
+            divisors.add(i)
     if len(divisors) > 0:
-        game_data[str(number)] = 'no'
+        answer = 'no'
     else:
-        game_data[str(number)] = 'yes'
+        answer = 'yes'
+    return str(question), answer

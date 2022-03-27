@@ -1,21 +1,25 @@
 from brain_games.cli import welcome_user
+import prompt
 
 
-def run_game(game_description, game_data):
+def run_game(game):
     name = welcome_user()
-    print(game_description)
-    answer_count = 0
-    for key in game_data:
-        print('Question: ' + key)
-        answer = input()
-        print('Your answer: ' + answer)
-        if answer == game_data[key]:
+    print(game.DESCRIPTION)
+    questions = set()
+    N = 3
+    for i in range(N):
+        question, correct_answer = game.get_question_and_answer()
+        while question in questions:
+            question, correct_answer = game.get_question_and_answer()
+        print('Question: {}'.format(question))
+        answer = prompt.string('Your answer: ')
+        if answer == correct_answer:
             print('Correct!')
-            answer_count += 1
+            questions.add(question)
         else:
-            print('\'' + answer + '\' is wrong answer ;(. '
-                  'Correct answer was \'' + game_data[key] + '\'.')
-            print('Let\'s try again, ' + name + '!')
+            print('\'{}\' is wrong answer ;(. '
+                  'Correct answer was \'{}\'.'.format(answer, correct_answer))
+            print('Let\'s try again, {}!'.format(name))
             break
-    if answer_count == len(game_data):
-        print('Congratulations, ' + name + '!')
+    if len(questions) == N:
+        print('Congratulations, {}!'.format(name))
