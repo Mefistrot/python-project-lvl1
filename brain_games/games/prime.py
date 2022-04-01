@@ -5,14 +5,15 @@ DESCRIPTION = '''Answer "yes" if given number is prime. \
 Otherwise answer "no".'''
 
 
+def is_prime(number):
+    divisors = set()
+    for i in range(2, number):
+        if number % i == 0:
+            divisors.add(i)
+    return False if len(divisors) > 0 else True
+
+
 def get_question_and_answer():
     question = randint(1, 100)
-    divisors = set()
-    for i in range(2, question):
-        if question % i == 0:
-            divisors.add(i)
-    if len(divisors) > 0:
-        answer = 'no'
-    else:
-        answer = 'yes'
+    answer = 'yes' if is_prime(question) else 'no'
     return str(question), answer

@@ -6,8 +6,8 @@ def run_game(game):
     name = welcome_user()
     print(game.DESCRIPTION)
     questions = set()
-    N = 3
-    for i in range(N):
+    round_count = 3
+    for i in range(round_count):
         question, correct_answer = game.get_question_and_answer()
         while question in questions:
             question, correct_answer = game.get_question_and_answer()
@@ -20,6 +20,5 @@ def run_game(game):
             print('\'{}\' is wrong answer ;(. '
                   'Correct answer was \'{}\'.'.format(answer, correct_answer))
             print('Let\'s try again, {}!'.format(name))
-            break
-    if len(questions) == N:
-        print('Congratulations, {}!'.format(name))
+            return
+    print('Congratulations, {}!'.format(name))
