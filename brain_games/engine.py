@@ -1,20 +1,20 @@
-from brain_games.cli import welcome_user
 import prompt
 
 
 def run_game(game):
-    name = welcome_user()
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
     print(game.DESCRIPTION)
-    round_count = 3
-    for i in range(round_count):
+    rounds_count = 3
+    for i in range(rounds_count):
         question, correct_answer = game.get_question_and_answer()
-        print('Question: {}'.format(question))
+        print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
-        if answer == correct_answer:
-            print('Correct!')
-        else:
-            print('\'{}\' is wrong answer ;(. '
-                  'Correct answer was \'{}\'.'.format(answer, correct_answer))
+        if answer != correct_answer:
+            print(f'\'{answer}\' is wrong answer ;(. '
+                  f'Correct answer was \'{correct_answer}\'.')
             print('Let\'s try again, {}!'.format(name))
             return
-    print('Congratulations, {}!'.format(name))
+        print('Correct!')
+    print(f'Congratulations, {name}!')

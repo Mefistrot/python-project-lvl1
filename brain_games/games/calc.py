@@ -14,6 +14,6 @@ def get_question_and_answer():
     number1 = randint(1, 20)
     number2 = randint(1, 20)
     operation = choice(list(operations.keys()))
-    question = str(number1) + ' ' + operation + ' ' + str(number2)
+    question = f'{str(number1)} {operation} {str(number2)}'
     answer = str(operations[operation](number1, number2))
     return question, answer

@@ -1,11 +1,13 @@
 from random import randint
 
 
-DESCRIPTION = '''Answer "yes" if given number is prime. \
-Otherwise answer "no".'''
+DESCRIPTION = (f'Answer "yes" if given number is prime. '  # noqa: F541
+               f'Otherwise answer "no".')  # noqa: F541
 
 
 def is_prime(number):
+    if number == 1:
+        return False
     divisors = set()
     for i in range(2, number):
         if number % i == 0:
