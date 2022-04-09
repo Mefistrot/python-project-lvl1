@@ -1,8 +1,8 @@
 from random import randint
 
 
-DESCRIPTION = (f'Answer "yes" if given number is prime. '  # noqa: F541
-               f'Otherwise answer "no".')  # noqa: F541
+DESCRIPTION = \
+    'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
