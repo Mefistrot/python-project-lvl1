@@ -8,11 +8,11 @@ DESCRIPTION = \
 def is_prime(number):
     if number == 1:
         return False
-    divisors = set()
     for i in range(2, number):
         if number % i == 0:
-            divisors.add(i)
-    return False if len(divisors) > 0 else True
+            return False
+    else:
+        return True
 
 
 def get_question_and_answer():
